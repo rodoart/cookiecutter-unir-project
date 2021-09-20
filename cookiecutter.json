@@ -5,6 +5,7 @@
     "project_class": "Materia",
     "project_author": "Rodolfo Arturo Gonzalez Trillo",
     "project_slug":  "act{{ cookiecutter.project_number }}_{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "python_version":"3.9.6",
     "_copy_without_render": [
         "*.tex",
         "*.cls"

@@ -1,5 +1,5 @@
 # conda env create --file environment.yml
-name: cookiecutter-personal-platzi
+name: {{ cookiecutter.project_slug }}
 channels:
   - anaconda
   - conda-forge
@@ -7,3 +7,6 @@ channels:
 dependencies:
   - cookiecutter
   - pygments
+  - jupyter
+  - jupyterlab
+  - python={{ cookiecutter.python_version }}
