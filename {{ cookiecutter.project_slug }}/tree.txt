@@ -1,0 +1,22 @@
+Listado de rutas de carpetas para el volumen Google Drive
+El n£mero de serie del volumen es 1983-1116
+G:.
+³   workspace.code-workspace
+³   README.md
+³   .gitignore
+³   tree.txt
+³   
+ÃÄÄÄfigures
+³       .gitkeep
+³       
+ÃÄÄÄlatex
+³       act{{ cookiecutter.project_number }}.tex
+³       biblography.bib
+³       
+ÃÄÄÄpython
+³       act{{ cookiecutter.project_number }}.ipynb
+³       environment.yml
+³       
+ÀÄÄÄdata
+        .gitkeep
+        

@@ -21,6 +21,7 @@ print(f"Creating .gitignore file...{RESET_ALL}")
 
 file_object = open('.gitignore', 'a')
 file_object.write('\n/data/')
+file_object.write('\n/figures/')
 file_object.close()
 
 print(f"Creating virtual enviroment...{RESET_ALL}")
