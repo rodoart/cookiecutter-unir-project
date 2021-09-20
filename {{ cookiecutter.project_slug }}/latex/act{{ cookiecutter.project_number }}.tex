@@ -1,0 +1,43 @@
+\documentclass[12pt,twocolumn,a4paper]{articuloAPA}
+%------------------------------------------------------------------------------%
+% INFORMACIÓN DEL ARTÍCULO Y METADATOS                                         %
+%------------------------------------------------------------------------------%
+\author{}
+\course{}
+\activity{}
+\assignment{}
+\title{}
+\keywords{ia, unir}
+\date{\today}
+%------------------------------------------------------------------------------%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%------------------------------------------------------------------------------%
+% Página de Título                                                             %
+%------------------------------------------------------------------------------%
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+
+    \begin{abstract}
+        \noindent \textit{ 
+          Se emplearon los modelos de clasificación de máquina de vectores de soporte y redes neuronales, para la clasificación de los datos de \textcite{sharma2017} y predecir la categoría \texttt{price\_range}. El modelo mejor ajustado fue el de redes neuronales que alcanzó una calificación f1 de 0.91 y el otro fue de 0.87.
+        }
+    \end{abstract}
+    \vspace{-20pt}
+    \vspace{2\baselineskip}
+    \vspace{-5pt}
+    \noindent\rule{\textwidth}{2pt}\vspace{7pt}
+  \end{@twocolumnfalse}
+]
+%------------------------------------------------------------------------------%
+\indexed{section}{Introducción}
+%------------------------------------------------------------------------------%
+
+%\twocolumn[\begin{@twocolumnfalse}
+\addcontentsline{toc}{section}{Referencias}
+\printbibliography
+%\end{@twocolumnfalse}]
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

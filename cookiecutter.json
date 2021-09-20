@@ -1,0 +1,12 @@
+{
+    "project_title": "Proyecto",
+    "project_name": "Actividad...",
+    "project_number": "1",
+    "project_class": "Materia",
+    "project_author": "Rodolfo Arturo Gonzalez Trillo",
+    "project_slug":  "act{{ cookiecutter.project_number }}_{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "_copy_without_render": [
+        "*.tex",
+        "*.cls"
+    ]
+}
