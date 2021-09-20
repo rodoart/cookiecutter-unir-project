@@ -15,9 +15,10 @@ subprocess.call(['conda', 'activate', '{{ cookiecutter.project_slug }}'])
 
 print(f"Downloading tex template...{RESET_ALL}")
 import requests
+
 url = 'https://raw.githubusercontent.com/rodoart/latex-apaarticle-cls/master/apa_article.cls'
 r = requests.get(url, allow_redirects=True)
-open(DATA_DIR.joinpath("latex", "apa_article.cls"), 'wb').write(r.content)
+open(CURRENT_DIR.joinpath("latex", "apa_article.cls"), 'wb').write(r.content)
 
 
 file_object = open('.gitignore', 'a')
