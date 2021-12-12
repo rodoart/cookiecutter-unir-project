@@ -9,5 +9,6 @@
     "_copy_without_render": [
         "*.tex",
         "*.cls"
-    ]
+    ],
+    "generate_virtual_enviroment": "n"
 }

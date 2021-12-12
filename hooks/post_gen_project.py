@@ -30,12 +30,12 @@ print(f"Creating virtual enviroment...{RESET_ALL}")
 enviro_path = CURRENT_DIR.joinpath("python", "environment.yml")
 print(f'"{enviro_path}"')
 
-#subprocess.call(['conda', 'env', 'create', '--file', f'"{enviro_path}"'])
 
-os.system(f'conda env create --file "{enviro_path}"')
+if generate_virtual_enviroment.lower().startswith("y"):
+    os.system(f'conda env create --file "{enviro_path}"')
 
-print(f"Starting virtual envirmoment...{RESET_ALL}")
-os.system('conda activate {{ cookiecutter.project_slug }}')
+    print(f"Starting virtual envirmoment...{RESET_ALL}")
+    os.system('conda activate {{ cookiecutter.project_slug }}')
 
 print(f"{MESSAGE_COLOR}Almost done!")
 print(f"Initializing a git repository...{RESET_ALL}")
