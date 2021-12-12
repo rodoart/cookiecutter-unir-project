@@ -7,6 +7,8 @@ CURRENT_DIR = pathlib.Path(".").resolve()
 MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
+GENERATE_VIRTUAL_ENVIROMENT = "{{ cookiecutter.generate_virtual_enviroment }}"
+
 print(f"Downloading tex template...{RESET_ALL}")
 import requests
 url = 'https://raw.githubusercontent.com/rodoart/latex-apaarticle-cls/master/apa_article.cls'
@@ -31,7 +33,7 @@ enviro_path = CURRENT_DIR.joinpath("python", "environment.yml")
 print(f'"{enviro_path}"')
 
 
-if generate_virtual_enviroment.lower().startswith("y"):
+if GENERATE_VIRTUAL_ENVIROMENT.lower().startswith("y"):
     os.system(f'conda env create --file "{enviro_path}"')
 
     print(f"Starting virtual envirmoment...{RESET_ALL}")
